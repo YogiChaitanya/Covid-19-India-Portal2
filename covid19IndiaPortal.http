@@ -1,0 +1,60 @@
+#
+POST https://yogichaitanyapncjfnjscpikngv.drops.nxtwave.tech/login/
+Content-Type: application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+
+
+#
+GET https://yogichaitanyapncjfnjscpikngv.drops.nxtwave.tech/login/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzA2MTczNzE4fQ.MVY8QoKTcC5wAHZTa6LC86zXIFRPe5k6jatWzcgtmGI
+
+##
+GET https://yogichaitanyapncjfnjscpikngv.drops.nxtwave.tech/states/
+
+###
+GET https://yogichaitanyapncjfnjscpikngv.drops.nxtwave.tech/states/3/
+
+
+####
+POST https://yogichaitanyapncjfnjscpikngv.drops.nxtwave.tech/districts/
+Content-Type: application/json
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+#####
+GET https://yogichaitanyapncjfnjscpikngv.drops.nxtwave.tech/districts/35/
+
+
+######
+DELETE https://yogichaitanyapncjfnjscpikngv.drops.nxtwave.tech/districts/36/
+
+
+
+#######
+PUT https://yogichaitanyapncjfnjscpikngv.drops.nxtwave.tech/districts/36/
+Content-Type: application/json
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+
+
+########
+GET https://yogichaitanyapncjfnjscpikngv.drops.nxtwave.tech/states/28/stats/
